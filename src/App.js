@@ -1,23 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import Clase3 from './components/clase-3/Clase3';
+import Polyfill from './components/Polyfill-clase3/Polyfill';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn
-        </a>
-      </header>
+      <Clase3/>
+      <Polyfill/>
     </div>
   );
 }
