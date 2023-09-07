@@ -1,16 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Clase3 from './components/clase-3/Clase3';
-import Polyfill from './components/clase3-Polyfill/Polyfill';
-import Jsx from './components/clase3-jsx/Jsx';
+import Clase4ContadorPadre from './components/clase-4/Clase4ContadorPadre';
 
 
 function App() {
   return (
     <div className="App">
-      <Clase3/>
-      <Polyfill/>
-      <Jsx/>
+      <Clase4ContadorPadre/>
     </div>
   );
 }
