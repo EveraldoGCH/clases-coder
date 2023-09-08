@@ -1,0 +1,12 @@
+
+.Card-container{
+    width: 23%;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.claro{
+    color:white;
+    border:1px solid white;
+}
