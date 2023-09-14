@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Boton({titulo, funcion}) {
+export default function Boton({titulo, funcion, deshabilitado}) {
   return (
     <div>
-        <button onClick={()=>funcion()}>{titulo}</button>
+        <button disabled={deshabilitado} onClick={()=>funcion()}>{titulo}</button>
     </div>
   )
 }

@@ -1,0 +1,6 @@
+header{
+    box-sizing: border-box;
+    width: 100%;
+    height: 80px;
+    border:4px solid black;
+}
