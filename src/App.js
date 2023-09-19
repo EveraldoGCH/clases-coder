@@ -6,13 +6,14 @@ import Props from './components/clase-5/Props/Props';
 import Boton from './components/clase-4/clase-4-boton/Boton';
 import HeaderConChildren from './components/clase-5/HeaderConChildren/HeaderConChildren';
 import ItemCount from './components/clase-5/ItemCount';
-
+import Promises from './components/clase-6/Promises/Promises';
 
 
 function App() {
+
   return (
     <div className="App">
-      <ItemCount />
+      <ListaCards/>
 
     </div>
   );
