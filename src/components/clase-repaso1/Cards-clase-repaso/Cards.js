@@ -2,14 +2,13 @@ import React from 'react'
 import "./style.css"
 
 export default function Cards({producto, oscuro}) {
-
+console.log(producto)
   return (
         <div className={oscuro?'Card-container claro':'Card-container'}>
-            <h2>{producto.titulo}</h2>
-            <p>{producto.marca}</p>
-            <p>{producto.precio}</p>
-            <p>{producto.categoria}</p>
-            <p>{producto.descrip}</p>
+            <h2>{producto.name}</h2>
+            <p>{producto.gender}</p>
+            <p>{producto.status}</p>
+            <img src={producto.image}/>
 
         </div>
   )

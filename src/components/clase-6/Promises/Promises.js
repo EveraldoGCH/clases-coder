@@ -15,19 +15,19 @@ export default function Promises() {
         }
     })
 
-    // promesa(6)
-    // .then(res=>console.log(res))
-    // .catch(err=>console.log(err))
 
     const llamada = () => {
-        fetch("https://rickatyapi.com/api/character")
+        fetch("https://rickandmortyapi.com/api/character?page=2&name=rick&status=alive",
+        {headers:{"Authorization":"hjfjhdfgsdfhjsdhsjhd cmscn"}})
             .then(res => res.json())
             .then(respuesta => console.log(respuesta))
             .catch(err => console.log("ERROR", err))
     }
 
+    let resultadoFetch=llamada()
+    console.log(resultadoFetch)
 
-    const array = [1, 2, 3, 4, 5, 6]
+
 
 
     return (
