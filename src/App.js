@@ -5,8 +5,10 @@ import HeaderConChildren from './components/clase-5/HeaderConChildren/HeaderConC
 import ListaCards from './components/clase-repaso1/ListaCards/ListaCards';
 import Personaje from './components/clase-9/Personaje';
 import Eventos from './components/clase-10/Eventos/Eventos';
+import ContextProvider from './components/clase-11-context/contextProvider/ContextProvider';
 
 function App() {
+
 
   const productos = [{
     titulo: "iPhone 15",
@@ -18,15 +20,17 @@ function App() {
 
 
   return (
+    <ContextProvider>
       <HeaderConChildren>
         <Routes>
-          <Route path='/' element={<ItemCountHOC/>} exact/>
-          <Route path='/eventos' element={<Eventos/>}/>
-          <Route path='/contador/:pepito' element={<ItemCountHOC2/>}/>
-          <Route path='/listado' element={<ListaCards/>}/>
-          <Route path='/personaje/:nombre' element={<Personaje/>}/>
+          <Route path='/' element={<ItemCountHOC />} exact />
+          <Route path='/eventos' element={<Eventos />} />
+          <Route path='/contador/:pepito' element={<ItemCountHOC2 />} />
+          <Route path='/listado' element={<ListaCards />} />
+          <Route path='/personaje/:nombre' element={<Personaje />} />
         </Routes>
       </HeaderConChildren>
+    </ContextProvider>
   );
 }
 
