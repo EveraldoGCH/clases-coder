@@ -3,5 +3,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+.oscuro{ 
+    background-color: black;
+    color: white;
+}
+
+.claro{
+    background-color: white;
+    color: black;
 }

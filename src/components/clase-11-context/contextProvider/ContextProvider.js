@@ -8,7 +8,6 @@ const [coleccion, setColeccion]=useState([])
 const [dark, setDark]=useState(false)
 
 useEffect(()=>{
-    console.log(localStorage.getItem("coleccion"))
     let coleccionLS=JSON.parse(localStorage.getItem("coleccion"))
     if(coleccionLS!=[]){
         setColeccion(coleccionLS)

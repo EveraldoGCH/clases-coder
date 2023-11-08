@@ -11,9 +11,7 @@ export default function HeaderConChildren({children}) {
     <NavLink to={"/personaje/morty"}>Morty</NavLink>
     <NavLink to={"/personaje/summer"}>Summer</NavLink>
     <NavLink to={"/"}>Inicio</NavLink>
-
     {children}
-    <div className='footer'>FOOTER</div>
     </>
   )
 }
